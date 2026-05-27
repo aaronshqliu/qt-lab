@@ -54,10 +54,6 @@ Widget::Widget(QWidget *parent)
      * 5、信号的参数个数可以多于槽函数的参数个数
      */
 
-    // Qt4版本以前的信号和槽的连接方式
-    // connect(teacher, SIGNAL(Hungry()), student, SLOT(Treat()));
-    // 类型不做检测，不推荐使用
-
     // lambda表达式
     // [=](){
     //     btn->setText("aaa");

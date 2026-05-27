@@ -26,3 +26,7 @@ FORMS += \
 qnx: target.path = /tmp/$${TARGET}/bin
 else: unix:!android: target.path = /opt/$${TARGET}/bin
 !isEmpty(target.path): INSTALLS += target
+
+msvc {
+    QMAKE_CXXFLAGS += /utf-8
+}
