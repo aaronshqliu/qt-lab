@@ -1,0 +1,23 @@
+<RCC>
+    <qresource prefix="/">
+        <file>icon/cancel.png</file>
+        <file>icon/down_hover.png</file>
+        <file>icon/down_normal.png</file>
+        <file>icon/down_pressed.png</file>
+        <file>icon/left_hover.png</file>
+        <file>icon/left_normal.png</file>
+        <file>icon/left_pressed.png</file>
+        <file>icon/ok.png</file>
+        <file>icon/reset_hover.png</file>
+        <file>icon/reset_normal.png</file>
+        <file>icon/reset_pressed.png</file>
+        <file>icon/right_hover.png</file>
+        <file>icon/right_normal.png</file>
+        <file>icon/right_pressed.png</file>
+        <file>icon/start.png</file>
+        <file>icon/stop.png</file>
+        <file>icon/up_hover.png</file>
+        <file>icon/up_normal.png</file>
+        <file>icon/up_pressed.png</file>
+    </qresource>
+</RCC>
