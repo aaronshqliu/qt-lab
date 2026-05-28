@@ -1,8 +1,9 @@
 #ifndef MY_WIDGET_H
 #define MY_WIDGET_H
 
-#include <QWidget>
 #include <QButtonGroup>
+#include <QTimer>
+#include <QWidget>
 
 QT_BEGIN_NAMESPACE
 namespace Ui {
@@ -33,8 +34,16 @@ private slots:
     void on_pBtnSetTitle_clicked();
     void on_pBtnUpdateIcon_clicked();
 
+    // 4、换行
+    void on_pushButtonAllowWrap_clicked();
+    void on_pushButtonDisableWrap_clicked();
+
+    // 定时器
+    void OnTimeOut();
+
 private:
     Ui::MyWidget *ui;
     QButtonGroup *alignGroup;
+    QTimer *timer;
 };
 #endif // MY_WIDGET_H

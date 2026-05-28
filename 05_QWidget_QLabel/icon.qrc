@@ -4,5 +4,7 @@
         <file>icon/blue.png</file>
         <file>icon/green.png</file>
         <file>icon/red.png</file>
+        <file>icon/angry.gif</file>
+        <file>icon/avatar.png</file>
     </qresource>
 </RCC>

@@ -1,9 +1,9 @@
 #include "my_widget.h"
 #include "./ui_my_widget.h"
 
-MYWidget::MYWidget(QWidget *parent)
+MyWidget::MyWidget(QWidget *parent)
     : QWidget(parent)
-    , ui(new Ui::MYWidget)
+    , ui(new Ui::MyWidget)
 {
     ui->setupUi(this);
 
@@ -133,44 +133,44 @@ QPushButton:pressed {
     ui->pBtnReset->setShortcut(QKeySequence(Qt::Key_Home));
 }
 
-MYWidget::~MYWidget()
+MyWidget::~MyWidget()
 {
     delete ui;
 }
 
-void MYWidget::on_pBtnStart_clicked()
+void MyWidget::on_pBtnStart_clicked()
 {
     ui->pBtnStart->setDisabled(true);
     ui->pBtnStop->setEnabled(true);
 }
 
-void MYWidget::on_pBtnStop_clicked()
+void MyWidget::on_pBtnStop_clicked()
 {
     ui->pBtnStart->setEnabled(true);
     ui->pBtnStop->setDisabled(true);
 }
 
-void MYWidget::on_pBtnUp_clicked()
+void MyWidget::on_pBtnUp_clicked()
 {
     moveLabelBy(0, -MOVE_STEP);
 }
 
-void MYWidget::on_pBtnDown_clicked()
+void MyWidget::on_pBtnDown_clicked()
 {
     moveLabelBy(0, MOVE_STEP);
 }
 
-void MYWidget::on_pBtnLeft_clicked()
+void MyWidget::on_pBtnLeft_clicked()
 {
     moveLabelBy(-MOVE_STEP, 0);
 }
 
-void MYWidget::on_pBtnRight_clicked()
+void MyWidget::on_pBtnRight_clicked()
 {
     moveLabelBy(MOVE_STEP, 0);
 }
 
-void MYWidget::on_pBtnReset_clicked()
+void MyWidget::on_pBtnReset_clicked()
 {
     // 获取父控件的大小
     QWidget *parentWidget = ui->labelMove->parentWidget();
@@ -183,7 +183,7 @@ void MYWidget::on_pBtnReset_clicked()
     ui->labelMove->move(x, y);
 }
 
-void MYWidget::moveLabelBy(int dx, int dy)
+void MyWidget::moveLabelBy(int dx, int dy)
 {
     // 1、计算预期目标坐标
     QPoint targetPos = ui->labelMove->pos() + QPoint(dx, dy);

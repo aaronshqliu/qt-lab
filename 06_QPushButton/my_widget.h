@@ -5,17 +5,17 @@
 
 QT_BEGIN_NAMESPACE
 namespace Ui {
-class MYWidget;
+class MyWidget;
 }
 QT_END_NAMESPACE
 
-class MYWidget : public QWidget
+class MyWidget : public QWidget
 {
     Q_OBJECT
 
 public:
-    explicit MYWidget(QWidget *parent = nullptr);
-    ~MYWidget() override;
+    explicit MyWidget(QWidget *parent = nullptr);
+    ~MyWidget() override;
 
 private slots:
     void on_pBtnStart_clicked();
@@ -29,7 +29,7 @@ private slots:
 private:
     void moveLabelBy(int dx, int dy);
 
-    Ui::MYWidget *ui;
+    Ui::MyWidget *ui;
     static const int MOVE_STEP = 10;
 };
 #endif // MY_WIDGET_H
