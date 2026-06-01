@@ -1,0 +1,14 @@
+<RCC>
+    <qresource prefix="/">
+        <file>res/advance.png</file>
+        <file>res/base.png</file>
+        <file>res/chart.png</file>
+        <file>res/customplot.png</file>
+        <file>res/gauge.png</file>
+        <file>res/hilight.png</file>
+        <file>res/iconfont.png</file>
+        <file>res/more.png</file>
+        <file>res/skin.png</file>
+        <file>res/weather.png</file>
+    </qresource>
+</RCC>
